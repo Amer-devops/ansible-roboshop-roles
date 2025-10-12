@@ -5,8 +5,8 @@
     dest: "/etc/systemd/system/{{ component }}.service"
     notify: daemon reload
 
-- name: daemon reload enable and start
+- name: enable and start
   ansible.builtin.service:
     name: "{{ component }}"
-    state: started
+    state: restarted
     enabled: yes
