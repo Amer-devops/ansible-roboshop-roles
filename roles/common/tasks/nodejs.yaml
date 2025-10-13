@@ -10,5 +10,5 @@
     state: present
 
 - name: Install dependencies
-  ommunity.general.npm:
+  community.general.npm:
     path: /app        
